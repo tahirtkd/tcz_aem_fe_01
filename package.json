@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "code": "^5.2.4",
+    "monkey": "^0.9.0"
+  }
+}
