@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #999393;
+}
+
+.manediv {
+  width: 360px;
+  height: 479px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 25px;
+  background-color: #fff;
+}
+.manediv .headdiv {
+  display: flex;
+  justify-content: space-between;
+}
+.manediv .headdiv button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.manediv .body__div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.manediv .body__div .flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+}
+.manediv .body__div .flex-wrapper h1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: -42px;
+}
+.manediv .body__div .single-chart {
+  width: 250px;
+  height: 250px;
+}
+.manediv .body__div .circular-chart {
+  display: block;
+  margin: auto;
+}
+.manediv .body__div .circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 5;
+}
+.manediv .body__div .circle {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.manediv .body__div .circular-chart.orange .circle {
+  stroke: #EB3349;
+}
+.manediv .body__div .percentage {
+  color: #000;
+  font-family: Roboto;
+  font-size: 6.5px;
+  font-weight: 700;
+}
+.manediv .body__div .footer__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.manediv .body__div .footer__div h4 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 7px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.manediv .body__div .footer__div input {
+  width: 125px;
+  height: 18px;
+  font-size: 17px;
+  padding: 16px;
+  color: var(--muted-color, #78858F);
+  outline: none;
+  border-radius: 10px;
+  border: 0px solid #000;
+  background: #F2F2F2;
+}
+.manediv .body__div .footer__div .color__div {
+  display: flex;
+  flex-direction: column;
+}
+.manediv .body__div .footer__div .color__div .color__2div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.manediv .body__div .footer__div .red__div {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #F25045;
+}
+.manediv .body__div .footer__div .white__div {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+}
+.manediv .body__div .footer__div h2 {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+}/*# sourceMappingURL=mystorage.css.map */

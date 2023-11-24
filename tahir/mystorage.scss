@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #999393;
+}
+
+.manediv {
+    width: 360px;
+    height: 479px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 25px;
+    background-color: #fff;
+
+    .headdiv {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .body__div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px auto;
+
+            h1 {
+                color: #000;
+                font-family: Roboto;
+                font-size: 32px;
+                font-weight: 700;
+                margin-top: -42px;
+            }
+        }
+
+        .single-chart {
+            width: 250px;
+            height: 250px;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: auto;
+
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 5.0;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 5.0;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+        }
+
+        @keyframes progress {
+            0% {
+                stroke-dasharray: 0 100;
+            }
+        }
+
+        .circular-chart.orange .circle {
+            stroke: #EB3349;
+        }
+
+        .percentage {
+            color: #000;
+            font-family: Roboto;
+            font-size: 6.5px;
+            font-weight: 700;
+        }
+
+        .footer__div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+
+            h4 {
+                color: #000;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 500;
+                padding-bottom: 7px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            input {
+                width: 125px;
+                height: 18px;
+                font-size: 17px;
+                padding: 16px;
+                color: var(--muted-color, #78858F);
+                outline: none;
+                border-radius: 10px;
+                border: 0px solid #000;
+                background: #F2F2F2;
+            }
+
+            .color__div {
+                display: flex;
+                flex-direction: column;
+
+                .color__2div {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                }
+
+            }
+
+            @mixin color__box($color) {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+                background-color: $color;
+            }
+
+
+            .red__div {
+                @include color__box(#F25045);
+            }
+
+            .white__div {
+                @include color__box(#F2F2F2);
+
+            }
+
+            h2 {
+                font-family: Roboto;
+                font-size: 17px;
+                font-weight: 500;
+                padding-left: 10px;
+            }
+
+        }
+
+
+    }
+
+}

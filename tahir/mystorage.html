@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my storage</title>
+    <link rel="stylesheet" href="mystorage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="manediv">
+        <div class="headdiv">
+            <button><img src="Vector.svg" alt=""></button>
+            <button><img src="carbon_overflow-menu-vertical.svg" alt=""></button>
+        </div>
+        <div class="body__div">
+            <div class="flex-wrapper">
+                <div class="single-chart">
+                    <svg viewBox="0 0 50 50" class="circular-chart orange">
+                        <path class="circle-bg" d="M25 4.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="70, 100" d="M25 4.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="19" y="22.5" class="percentage">70%</text>
+                    </svg>
+                </div>
+                <h1>My storage</h1>
+
+            </div>
+            <div class="footer__div">
+                <div class="number__div">
+                    <h4>Percent</h4>
+                    <input id="input__id" type="number" name="" id="">
+                </div>
+                <div class="color__div">
+                    <div class="color__2div">
+                        <div class="red__div"></div>
+                        <h2>Used</h2>
+                    </div>
+                    <div class="color__2div">
+                        <div class="white__div"></div>
+                        <h2>Total space</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+
+    $("#input__id").change(function () {
+
+        var inputval = $(this).val()
+        if (inputval < 100 && inputval > 0) {
+
+            $(".percentage").text(inputval + "%")
+
+            $(".circle").attr("stroke-dasharray", inputval + ", 100")
+        }
+    }
+    )
+
+
+
+
+</script>
+
+</html>
